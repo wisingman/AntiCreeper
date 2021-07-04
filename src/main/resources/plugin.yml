@@ -2,4 +2,5 @@ name: AntiCreeperWithDamage
 version: ${project.version}
 main: yt.ppg.creeper.Core
 api-version: 1.16
+website: ppg.yt
 authors: [ Wising ]
