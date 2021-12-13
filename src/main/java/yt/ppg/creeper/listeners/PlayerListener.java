@@ -10,9 +10,7 @@ public class PlayerListener implements Listener {
     @EventHandler
     public void onExplosion(EntityExplodeEvent e) {
         if (e.getEntity() instanceof Creeper) {
-            e.setCancelled(true);
-            e.getLocation().getWorld().createExplosion(e.getLocation().subtract(0, 3, 0), 4, false, false, e.getEntity());
-            e.getEntity().remove();
+        	e.blockList().clear();
         }
     }
 
